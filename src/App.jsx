@@ -1,3 +1,4 @@
+import Navbar from './components/Navbar.jsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Inicio from './pages/Inicio.jsx'
 import Estudiantes from './pages/Estudiantes.jsx'
@@ -16,6 +17,7 @@ function App() {
 
   return (
       <BrowserRouter>
+        <Navbar />
         <div className='App'>
           <Sidebar />
           <div className='page-content'>
